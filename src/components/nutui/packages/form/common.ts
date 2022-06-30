@@ -132,8 +132,6 @@ export const component = {
      */
     const validate = (customProp: string = "") => {
       return new Promise((resolve, reject) => {
-        // 获取default的vnode
-        debugger;
         const vnodes = slots.default?.();
         if (!vnodes) {
           reject("[NutUI] <Form> 没有找到 <FormItem>");
